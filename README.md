@@ -89,7 +89,7 @@ Useful flags:
 
 ## Tests
 
-`tests/` contains a sample handwritten PDF and its expected `.tex` output for
+`tests/` contains a sample PDF (generated, not handwritten, please only use as smoke test) and its expected `.tex` output for
 manual comparison.
 
 ## Troubleshooting
