@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# latexify — handwritten math PDF -> LaTeX via a local KoboldCPP vision model.
+# Thin wrapper around pipeline.py; all arguments pass through.
+#
+#   latexify homework.pdf
+#   latexify homework.pdf --pdf ~/out/homework_final.pdf
+#   latexify homework.pdf --compile          # PDF lands next to the .tex
+#
+# Requires KoboldCPP running with a vision (mmproj) model, default port 5001.
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec python3 "$DIR/pipeline.py" "$@"

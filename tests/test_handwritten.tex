@@ -1,0 +1,37 @@
+% Fake "handwritten homework" page used to test math_converter/pipeline.py.
+% Italic text loosely mimics handwriting; content is intentionally varied:
+% prose, a derivative chain (align), a fraction, a sum, and a sqrt.
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+\itshape
+
+\section*{Problem 1}
+
+Let $f:\mathbb{R}\to\mathbb{R}$ be given by $f(x)=x^{2}\sin x$.
+Compute the derivative:
+
+\begin{align*}
+    f'(x) &= 2x\sin x + x^{2}\cos x \\
+          &= x\left(2\sin x + x\cos x\right).
+\end{align*}
+
+\section*{Problem 2}
+
+Show that
+\[
+    \sum_{i=1}^{n} i \;=\; \frac{n(n+1)}{2}.
+\]
+
+\section*{Problem 3}
+
+Simplify $\sqrt{x^{2}+2x+1}$ for $x \geq -1$:
+
+\begin{align*}
+    \sqrt{x^{2}+2x+1} &= \sqrt{(x+1)^{2}} \\
+                      &= |x+1| \\
+                      &= x+1 \qquad \text{since } x \geq -1.
+\end{align*}
+
+\end{document}
